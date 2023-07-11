@@ -2,10 +2,11 @@ VERSION="0.1.5"
 class Urakil < Formula
     desc "URL shortener via bit.ly, etc."
     homepage "https://github.com/HaguraHikaru/urakil"
-    url "https://github.com/HaguraHikaru/urakil/releases/download/v#{VERSION}/urakil-#{VERSION}.tar.gz"
+    url "https://github.com/HaguraHikaru/urakil/releases/download/v#{VERSION}/urakil-#{VERSION}_darwin_arm64.tar.gz"
     version VERSION
-    sha256 "9acaac942b4617ac01495de24da482be902d7dc1ea05b8947452f288a248c7f9"
+    sha256 "d858cb18e3d9f8ecbe4c536f5c43f38e00ab1babf799295ede7426c5ea24bcaa"
     license "MIT"
+
     option "without-completions", "Disable bash completions"
     depends_on "bash-completion@2" => :optional
 
