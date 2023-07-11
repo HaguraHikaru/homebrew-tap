@@ -2,7 +2,7 @@ VERSION="0.1.5"
 class Urakil < Formula
     desc "URL shortener via bit.ly, etc."
     homepage "https://github.com/HaguraHikaru/urakil"
-    url "https://github.com/HaguraHikaru/urakil/archive/refs/tags/v0.1.5.tar.gz"
+    url "https://github.com/HaguraHikaru/urakil/releases/download/v#{VERSION}/urakil-#{VERSION}.tar.gz"
     version VERSION
     sha256 "9acaac942b4617ac01495de24da482be902d7dc1ea05b8947452f288a248c7f9"
     license "MIT"
