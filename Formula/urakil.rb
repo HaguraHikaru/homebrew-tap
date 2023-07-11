@@ -3,7 +3,7 @@ class Urakil < Formula
     desc "URL shortener via bit.ly, etc."
     homepage "https://github.com/HaguraHikaru/urakil"
     url "https://github.com/HaguraHikaru/urakil/archive/refs/tags/v#{VERSION}.tar.gz"
-    sha256 "45e859e88131719d62bfec2b6ee4320979608e5aadf4c3cf56afd2eda65cd581"
+    sha256 "9acaac942b4617ac01495de24da482be902d7dc1ea05b8947452f288a248c7f9"
     license "MIT"
     option "without-completions", "Disable bash completions"
     depends_on "bash-completion@2" => :optional
