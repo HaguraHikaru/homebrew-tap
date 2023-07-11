@@ -4,7 +4,7 @@ class Urakil < Formula
     homepage "https://github.com/HaguraHikaru/urakil"
     url "https://github.com/HaguraHikaru/urakil/releases/download/v#{VERSION}/urakil-#{VERSION}_darwin_arm64.tar.gz"
     version VERSION
-    sha256 "188b5d78421250eb3d1e0c1110e867ce37f1bf962dcd89ab8becfbdb6fdffd64"
+    sha256 "6d5f83e2ddf1a5badba9f2e6bff7cdc8d4a32f2a4dc24c16d5342f2d0380088d"
     license "MIT"
 
     option "without-completions", "Disable bash completions"
