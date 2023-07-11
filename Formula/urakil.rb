@@ -2,20 +2,20 @@ VERSION="0.1.5"
 class Urakil < Formula
     desc "URL shortener via bit.ly, etc."
     homepage "https://github.com/HaguraHikaru/urakil"
-    url "https://github.com/HaguraHikaru/urakil/releases/download/v#{VERSION}/urakil-#{VERSION}.tar.gz"
+    url "https://github.com/HaguraHikaru/urakil/archive/refs/tags/v0.1.5.tar.gz"
     version VERSION
-    sha256 "9acaac942b4617ac01495de24da482be902d7dc1ea05b8947452f288a248c7f9"
+    sha256 "45e859e88131719d62bfec2b6ee4320979608e5aadf4c3cf56afd2eda65cd581"
     license "MIT"
     option "without-completions", "Disable bash completions"
     depends_on "bash-completion@2" => :optional
 
   # depends_on "cmake" => :build
     def install
-        bin.install "urakil-#{VERSION}"
-        bash_completion.install "completions/bash/urakil-#{VERSION}" if build.with? "completions" 
+        bin.install "urakil"
+        bash_completion.install "completions/bash/urakil" if build.with? "completions" 
     end
 
     test do
-        system bin/"urakil-#{VERSION}", "--version"
+        system bin/"urakil", "--version"
     end
 end
