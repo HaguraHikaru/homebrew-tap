@@ -1,4 +1,4 @@
-VERSION="0.1.4"
+VERSION="0.1.5"
 class Urakil < Formula
     desc "URL shortener via bit.ly, etc."
     homepage "https://github.com/HaguraHikaru/urakil"
@@ -15,6 +15,6 @@ class Urakil < Formula
     end
 
     test do
-        system bin/"urleap", "--version"
+        system bin/"urakil", "--version"
     end
 end
